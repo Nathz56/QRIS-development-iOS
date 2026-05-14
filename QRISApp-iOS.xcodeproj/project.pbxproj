@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15E3089F2FB5E5B300146F58 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 15E3089E2FB5E5B100146F58 /* .gitignore */; };
+		5CC2F15EC934AFAE1AB4A93C /* Pods_QRISApp_iOS_QRISApp_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1771774F84003B9642F94797 /* Pods_QRISApp_iOS_QRISApp_iOSUITests.framework */; };
+		952D74CEC4B2FAD5AA66AC41 /* Pods_QRISApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52C70FABC7EB482374FED0D /* Pods_QRISApp_iOS.framework */; };
+		BAAA1B9E41D6DE297E3F5BF5 /* Pods_QRISApp_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568AC3D9FEF09F25EB891FF5 /* Pods_QRISApp_iOSTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15E3087F2FB5E59D00146F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15E308602FB5E59C00146F58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15E308672FB5E59C00146F58;
+			remoteInfo = "QRISApp-iOS";
+		};
+		15E308892FB5E59D00146F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15E308602FB5E59C00146F58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15E308672FB5E59C00146F58;
+			remoteInfo = "QRISApp-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15E308682FB5E59C00146F58 /* QRISApp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QRISApp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15E3087E2FB5E59D00146F58 /* QRISApp-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QRISApp-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15E308882FB5E59D00146F58 /* QRISApp-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QRISApp-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15E3089E2FB5E5B100146F58 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		1771774F84003B9642F94797 /* Pods_QRISApp_iOS_QRISApp_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRISApp_iOS_QRISApp_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A5EB5E61BEBC0FEFFF9BE50 /* Pods-QRISApp-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRISApp-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-QRISApp-iOSTests/Pods-QRISApp-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		3EFEE360591D95FAEEB5EE16 /* Pods-QRISApp-iOS-QRISApp-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRISApp-iOS-QRISApp-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-QRISApp-iOS-QRISApp-iOSUITests/Pods-QRISApp-iOS-QRISApp-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4C7FB265897FAA089FD3EAFA /* Pods-QRISApp-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRISApp-iOS.debug.xcconfig"; path = "Target Support Files/Pods-QRISApp-iOS/Pods-QRISApp-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		568AC3D9FEF09F25EB891FF5 /* Pods_QRISApp_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRISApp_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A5E7F8F26AAF80BCC79934C /* Pods-QRISApp-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRISApp-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-QRISApp-iOSTests/Pods-QRISApp-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		896875E41A604849D6C34657 /* Pods-QRISApp-iOS-QRISApp-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRISApp-iOS-QRISApp-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-QRISApp-iOS-QRISApp-iOSUITests/Pods-QRISApp-iOS-QRISApp-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB177E30620601F345660856 /* Pods-QRISApp-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRISApp-iOS.release.xcconfig"; path = "Target Support Files/Pods-QRISApp-iOS/Pods-QRISApp-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		C52C70FABC7EB482374FED0D /* Pods_QRISApp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRISApp_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		15E308902FB5E59D00146F58 /* Exceptions for "QRISApp-iOS" folder in "QRISApp-iOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 15E308672FB5E59C00146F58 /* QRISApp-iOS */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		15E3086A2FB5E59C00146F58 /* QRISApp-iOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				15E308902FB5E59D00146F58 /* Exceptions for "QRISApp-iOS" folder in "QRISApp-iOS" target */,
+			);
+			path = "QRISApp-iOS";
+			sourceTree = "<group>";
+		};
+		15E308812FB5E59D00146F58 /* QRISApp-iOSTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = "QRISApp-iOSTests";
+			sourceTree = "<group>";
+		};
+		15E3088B2FB5E59D00146F58 /* QRISApp-iOSUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = "QRISApp-iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15E308652FB5E59C00146F58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952D74CEC4B2FAD5AA66AC41 /* Pods_QRISApp_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E3087B2FB5E59D00146F58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAAA1B9E41D6DE297E3F5BF5 /* Pods_QRISApp_iOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E308852FB5E59D00146F58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CC2F15EC934AFAE1AB4A93C /* Pods_QRISApp_iOS_QRISApp_iOSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15E3085F2FB5E59C00146F58 = {
+			isa = PBXGroup;
+			children = (
+				15E3089E2FB5E5B100146F58 /* .gitignore */,
+				15E3086A2FB5E59C00146F58 /* QRISApp-iOS */,
+				15E308812FB5E59D00146F58 /* QRISApp-iOSTests */,
+				15E3088B2FB5E59D00146F58 /* QRISApp-iOSUITests */,
+				15E308692FB5E59C00146F58 /* Products */,
+				554654AC6CBD822768F21A7A /* Pods */,
+				9080D8963A306E3601859139 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		15E308692FB5E59C00146F58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15E308682FB5E59C00146F58 /* QRISApp-iOS.app */,
+				15E3087E2FB5E59D00146F58 /* QRISApp-iOSTests.xctest */,
+				15E308882FB5E59D00146F58 /* QRISApp-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		554654AC6CBD822768F21A7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C7FB265897FAA089FD3EAFA /* Pods-QRISApp-iOS.debug.xcconfig */,
+				AB177E30620601F345660856 /* Pods-QRISApp-iOS.release.xcconfig */,
+				896875E41A604849D6C34657 /* Pods-QRISApp-iOS-QRISApp-iOSUITests.debug.xcconfig */,
+				3EFEE360591D95FAEEB5EE16 /* Pods-QRISApp-iOS-QRISApp-iOSUITests.release.xcconfig */,
+				7A5E7F8F26AAF80BCC79934C /* Pods-QRISApp-iOSTests.debug.xcconfig */,
+				3A5EB5E61BEBC0FEFFF9BE50 /* Pods-QRISApp-iOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9080D8963A306E3601859139 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C52C70FABC7EB482374FED0D /* Pods_QRISApp_iOS.framework */,
+				1771774F84003B9642F94797 /* Pods_QRISApp_iOS_QRISApp_iOSUITests.framework */,
+				568AC3D9FEF09F25EB891FF5 /* Pods_QRISApp_iOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15E308672FB5E59C00146F58 /* QRISApp-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15E308912FB5E59D00146F58 /* Build configuration list for PBXNativeTarget "QRISApp-iOS" */;
+			buildPhases = (
+				C48EC0F2605CAEE3AF31662F /* [CP] Check Pods Manifest.lock */,
+				15E308642FB5E59C00146F58 /* Sources */,
+				15E308652FB5E59C00146F58 /* Frameworks */,
+				15E308662FB5E59C00146F58 /* Resources */,
+				BFD2B39F4ECC4E5104A656C0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				15E3086A2FB5E59C00146F58 /* QRISApp-iOS */,
+			);
+			name = "QRISApp-iOS";
+			productName = "QRISApp-iOS";
+			productReference = 15E308682FB5E59C00146F58 /* QRISApp-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15E3087D2FB5E59D00146F58 /* QRISApp-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15E308962FB5E59D00146F58 /* Build configuration list for PBXNativeTarget "QRISApp-iOSTests" */;
+			buildPhases = (
+				B5166C4BDAA317AD8B94EBB8 /* [CP] Check Pods Manifest.lock */,
+				15E3087A2FB5E59D00146F58 /* Sources */,
+				15E3087B2FB5E59D00146F58 /* Frameworks */,
+				15E3087C2FB5E59D00146F58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15E308802FB5E59D00146F58 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				15E308812FB5E59D00146F58 /* QRISApp-iOSTests */,
+			);
+			name = "QRISApp-iOSTests";
+			productName = "QRISApp-iOSTests";
+			productReference = 15E3087E2FB5E59D00146F58 /* QRISApp-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		15E308872FB5E59D00146F58 /* QRISApp-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15E308992FB5E59D00146F58 /* Build configuration list for PBXNativeTarget "QRISApp-iOSUITests" */;
+			buildPhases = (
+				977A2C184FF11D0FC8A6C7E9 /* [CP] Check Pods Manifest.lock */,
+				15E308842FB5E59D00146F58 /* Sources */,
+				15E308852FB5E59D00146F58 /* Frameworks */,
+				15E308862FB5E59D00146F58 /* Resources */,
+				86DE338ACE31761AF3848573 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15E3088A2FB5E59D00146F58 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				15E3088B2FB5E59D00146F58 /* QRISApp-iOSUITests */,
+			);
+			name = "QRISApp-iOSUITests";
+			productName = "QRISApp-iOSUITests";
+			productReference = 15E308882FB5E59D00146F58 /* QRISApp-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15E308602FB5E59C00146F58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					15E308672FB5E59C00146F58 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					15E3087D2FB5E59D00146F58 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 15E308672FB5E59C00146F58;
+					};
+					15E308872FB5E59D00146F58 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 15E308672FB5E59C00146F58;
+					};
+				};
+			};
+			buildConfigurationList = 15E308632FB5E59C00146F58 /* Build configuration list for PBXProject "QRISApp-iOS" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15E3085F2FB5E59C00146F58;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 15E308692FB5E59C00146F58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15E308672FB5E59C00146F58 /* QRISApp-iOS */,
+				15E3087D2FB5E59D00146F58 /* QRISApp-iOSTests */,
+				15E308872FB5E59D00146F58 /* QRISApp-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15E308662FB5E59C00146F58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15E3089F2FB5E5B300146F58 /* .gitignore in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E3087C2FB5E59D00146F58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E308862FB5E59D00146F58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86DE338ACE31761AF3848573 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QRISApp-iOS-QRISApp-iOSUITests/Pods-QRISApp-iOS-QRISApp-iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QRISApp-iOS-QRISApp-iOSUITests/Pods-QRISApp-iOS-QRISApp-iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QRISApp-iOS-QRISApp-iOSUITests/Pods-QRISApp-iOS-QRISApp-iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		977A2C184FF11D0FC8A6C7E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QRISApp-iOS-QRISApp-iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5166C4BDAA317AD8B94EBB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QRISApp-iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFD2B39F4ECC4E5104A656C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QRISApp-iOS/Pods-QRISApp-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QRISApp-iOS/Pods-QRISApp-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QRISApp-iOS/Pods-QRISApp-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C48EC0F2605CAEE3AF31662F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QRISApp-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15E308642FB5E59C00146F58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E3087A2FB5E59D00146F58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E308842FB5E59D00146F58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15E308802FB5E59D00146F58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15E308672FB5E59C00146F58 /* QRISApp-iOS */;
+			targetProxy = 15E3087F2FB5E59D00146F58 /* PBXContainerItemProxy */;
+		};
+		15E3088A2FB5E59D00146F58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15E308672FB5E59C00146F58 /* QRISApp-iOS */;
+			targetProxy = 15E308892FB5E59D00146F58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		15E308922FB5E59D00146F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C7FB265897FAA089FD3EAFA /* Pods-QRISApp-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FG24D3VYJ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "QRISApp-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yonathan.QRISApp-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15E308932FB5E59D00146F58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB177E30620601F345660856 /* Pods-QRISApp-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FG24D3VYJ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "QRISApp-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yonathan.QRISApp-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		15E308942FB5E59D00146F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = FG24D3VYJ3;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15E308952FB5E59D00146F58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = FG24D3VYJ3;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15E308972FB5E59D00146F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A5E7F8F26AAF80BCC79934C /* Pods-QRISApp-iOSTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FG24D3VYJ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yonathan.QRISApp-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRISApp-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/QRISApp-iOS";
+			};
+			name = Debug;
+		};
+		15E308982FB5E59D00146F58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A5EB5E61BEBC0FEFFF9BE50 /* Pods-QRISApp-iOSTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FG24D3VYJ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yonathan.QRISApp-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRISApp-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/QRISApp-iOS";
+			};
+			name = Release;
+		};
+		15E3089A2FB5E59D00146F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 896875E41A604849D6C34657 /* Pods-QRISApp-iOS-QRISApp-iOSUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FG24D3VYJ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yonathan.QRISApp-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "QRISApp-iOS";
+			};
+			name = Debug;
+		};
+		15E3089B2FB5E59D00146F58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EFEE360591D95FAEEB5EE16 /* Pods-QRISApp-iOS-QRISApp-iOSUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FG24D3VYJ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yonathan.QRISApp-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "QRISApp-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15E308632FB5E59C00146F58 /* Build configuration list for PBXProject "QRISApp-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15E308942FB5E59D00146F58 /* Debug */,
+				15E308952FB5E59D00146F58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15E308912FB5E59D00146F58 /* Build configuration list for PBXNativeTarget "QRISApp-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15E308922FB5E59D00146F58 /* Debug */,
+				15E308932FB5E59D00146F58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15E308962FB5E59D00146F58 /* Build configuration list for PBXNativeTarget "QRISApp-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15E308972FB5E59D00146F58 /* Debug */,
+				15E308982FB5E59D00146F58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15E308992FB5E59D00146F58 /* Build configuration list for PBXNativeTarget "QRISApp-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15E3089A2FB5E59D00146F58 /* Debug */,
+				15E3089B2FB5E59D00146F58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15E308602FB5E59C00146F58 /* Project object */;
+}
