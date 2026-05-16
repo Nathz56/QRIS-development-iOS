@@ -35,7 +35,8 @@ final class ScanQRRouter: ScanQRRouterProtocol {
     }
     
     func navigateToPayment(transaction: ScanQREntity) {
-        viewController?.navigationController?.popToRootViewController(animated: true)
+        let paymentViewController = PaymentRouter.createModule(transaction: transaction)
+        viewController?.navigationController?.pushViewController(paymentViewController, animated: true)
     }
     
 }

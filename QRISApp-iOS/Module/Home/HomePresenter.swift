@@ -30,6 +30,11 @@ final class HomePresenter: HomePresenterProtocol {
         showBalance()
     }
     
+    func viewWillAppear() {
+        fetchBalance()
+        showBalance()
+    }
+    
     func didTapScan() {
         router.navigateToScanQR()
     }
@@ -39,6 +44,7 @@ final class HomePresenter: HomePresenterProtocol {
     }
     
     func showBalance() {
-        view?.showBalance(balance ?? 0)
+        guard let balance else { return }
+        view?.showBalance(balance)
     }
 }
