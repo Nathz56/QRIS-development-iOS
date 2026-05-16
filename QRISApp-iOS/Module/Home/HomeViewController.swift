@@ -22,9 +22,10 @@ final class HomeViewController: UIViewController {
     }
     
     private let balanceLabel : UILabel = {
-        let balanceLabel = UILabel()
-        balanceLabel.font = UIFont.systemFont(ofSize: 24, weight: .bold)
-        return balanceLabel
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+        label.textColor = .black
+        return label
     }()
     
     private let scanButton: UIButton = {
@@ -62,7 +63,7 @@ final class HomeViewController: UIViewController {
 
     private func setupLayout() {
         balanceLabel.snp.makeConstraints {
-            $0.top.equalTo(180)
+            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(180)
             $0.leading.equalTo(40)
         }
 

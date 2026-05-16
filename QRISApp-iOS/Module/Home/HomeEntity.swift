@@ -5,7 +5,7 @@
 //  Created by Yonathan Hilkia on 14/05/26.
 //
 
-struct UserBalance {
+struct HomeEntity {
     
     var balanceAmount: Int
     

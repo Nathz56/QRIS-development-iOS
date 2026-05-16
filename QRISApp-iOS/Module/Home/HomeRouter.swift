@@ -35,7 +35,7 @@ final class HomeRouter: HomeRouterProtocol {
     
     func navigateToScanQR() {
         
-        let scanQRViewController = ScanQRViewController()
+        let scanQRViewController = ScanQRRouter.createModule()
         viewController?.navigationController?.pushViewController(scanQRViewController, animated: true)
         
     }
