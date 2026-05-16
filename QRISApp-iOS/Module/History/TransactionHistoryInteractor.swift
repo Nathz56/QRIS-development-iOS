@@ -8,7 +8,7 @@
 
 final class TransactionHistoryInteractor: TransactionHistoryInteractorProtocol {
     
-    func fetchTransactions() -> [ScanQREntity] {
+    func fetchTransactions() -> [QRData] {
         return UserBalance.shared.transactions
     }
 }

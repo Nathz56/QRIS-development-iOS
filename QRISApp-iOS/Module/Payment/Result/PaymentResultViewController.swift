@@ -130,24 +130,17 @@ final class PaymentResultViewController: UIViewController {
     private func tappedDoneButton() {
         presenter.didTapDone()
     }
-    
-    private func formatCurrency(_ amount: Int) -> String {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        formatter.groupingSeparator = "."
-        return "Rp \(formatter.string(from: NSNumber(value: amount)) ?? "0")"
-    }
 }
 
 extension PaymentResultViewController: PaymentResultViewProtocol {
     
-    func showSuccess(transaction: ScanQREntity, remainingBalance: Int) {
+    func showSuccess(transaction: QRData, remainingBalance: Int) {
         title = "Pembayaran Berhasil"
         iconLabel.text = "✅"
         statusLabel.text = "Pembayaran Berhasil"
         merchantLabel.text = transaction.merchantName
-        amountLabel.text = formatCurrency(transaction.amount)
-        remainingBalanceLabel.text = "Sisa saldo: \(formatCurrency(remainingBalance))"
+        amountLabel.text = FormatCurrency.format(transaction.amount)
+        remainingBalanceLabel.text = "Sisa saldo: \(FormatCurrency.format(remainingBalance))"
     }
     
     func showFailed() {

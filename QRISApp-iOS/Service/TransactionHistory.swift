@@ -9,9 +9,9 @@ final class TransactionHistory {
     static let shared = TransactionHistory()
     private init() {}
     
-    private(set) var transactions: [ScanQREntity] = []
+    private(set) var transactions: [QRData] = []
     
-    func addTransactionToHistory(transaction: ScanQREntity) {
+    func addTransactionToHistory(transaction: QRData) {
         transactions.insert(transaction, at: 0)
     }
 }

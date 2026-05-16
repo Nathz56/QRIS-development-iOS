@@ -12,7 +12,7 @@ import SnapKit
 final class TransactionHistoryViewController: UIViewController {
     
     private let presenter: TransactionHistoryPresenterProtocol
-    private var transactions: [ScanQREntity] = []
+    private var transactions: [QRData] = []
     
     init(presenter: TransactionHistoryPresenterProtocol) {
         self.presenter = presenter
@@ -49,7 +49,7 @@ final class TransactionHistoryViewController: UIViewController {
     }
     
     private func setupView() {
-        title = "Riwayat Transaksi"
+        title = "Riwayat"
         view.backgroundColor = .white
         
         tableView.dataSource = self
@@ -67,13 +67,6 @@ final class TransactionHistoryViewController: UIViewController {
             $0.center.equalToSuperview()
         }
     }
-    
-    private func formatCurrency(_ amount: Int) -> String {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        formatter.groupingSeparator = "."
-        return "Rp \(formatter.string(from: NSNumber(value: amount)) ?? "0")"
-    }
 }
 
 // MARK: - UITableViewDataSource
@@ -89,7 +82,7 @@ extension TransactionHistoryViewController: UITableViewDataSource {
         
         var content = cell.defaultContentConfiguration()
         content.text = transaction.merchantName
-        content.secondaryText = formatCurrency(transaction.amount)
+        content.secondaryText = FormatCurrency.format(transaction.amount)
         cell.contentConfiguration = content
         
         return cell
@@ -99,7 +92,7 @@ extension TransactionHistoryViewController: UITableViewDataSource {
 // MARK: - TransactionHistoryViewProtocol
 extension TransactionHistoryViewController: TransactionHistoryViewProtocol {
     
-    func showTransactions(_ transactions: [ScanQREntity]) {
+    func showTransactions(_ transactions: [QRData]) {
         self.transactions = transactions
         tableView.isHidden = false
         emptyLabel.isHidden = true

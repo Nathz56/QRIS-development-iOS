@@ -6,7 +6,7 @@
 //
 
 protocol PaymentViewProtocol: AnyObject {
-    func showPaymentSuccess(transaction: ScanQREntity, remainingBalance: Int)
+    func showPaymentSuccess(transaction: QRData, remainingBalance: Int)
     func showPaymentFailed(message: String)
 }
 
@@ -16,7 +16,7 @@ protocol PaymentPresenterProtocol: AnyObject {
 }
 
 protocol PaymentInteractorProtocol: AnyObject {
-    func processPayment(transaction: ScanQREntity) -> Bool
+    func processPayment(transaction: QRData) -> Bool
     func getRemainingBalance() -> Int
 }
 

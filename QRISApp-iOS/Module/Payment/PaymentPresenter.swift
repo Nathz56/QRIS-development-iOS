@@ -14,12 +14,12 @@ final class PaymentPresenter: PaymentPresenterProtocol {
     
     let interactor: PaymentInteractorProtocol
     let router: PaymentRouterProtocol
-    let transaction: ScanQREntity
+    let transaction: QRData
     
     init(
         interactor: PaymentInteractorProtocol,
         router: PaymentRouterProtocol,
-        transaction: ScanQREntity
+        transaction: QRData
     ) {
         self.interactor = interactor
         self.router = router

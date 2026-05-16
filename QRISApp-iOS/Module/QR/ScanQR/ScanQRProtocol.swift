@@ -8,20 +8,18 @@
 import UIKit
 
 protocol ScanQRViewProtocol: AnyObject {
-    func showGeneratedQRCode(_ image: UIImage?)
 }
 
 protocol ScanQRPresenterProtocol: AnyObject {
     func viewDidLoad()
-    func didTapGenerateQRCode()
     func didScanQRCode(qrString: String)
     
 }
 
 protocol ScanQRInteractorProtocol: AnyObject {
-    func generateQRCode(from entity: ScanQREntity) -> UIImage?
+    func isValidQRString(_ qrString: String) -> Bool
 }
 
 protocol ScanQRRouterProtocol: AnyObject {
-    func navigateToPayment(transaction: ScanQREntity)
+    func navigateToPayment(transaction: QRData)
 }

@@ -26,7 +26,7 @@ final class ScanQRRouter: ScanQRRouterProtocol {
             presenter: presenter
         )
         
-        presenter.view = viewController
+//        presenter.view = viewController
         
         router.viewController = viewController
         
@@ -34,7 +34,7 @@ final class ScanQRRouter: ScanQRRouterProtocol {
         
     }
     
-    func navigateToPayment(transaction: ScanQREntity) {
+    func navigateToPayment(transaction: QRData) {
         let paymentViewController = PaymentRouter.createModule(transaction: transaction)
         viewController?.navigationController?.pushViewController(paymentViewController, animated: true)
     }

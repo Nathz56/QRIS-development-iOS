@@ -44,4 +44,9 @@ final class HomeRouter: HomeRouterProtocol {
         let historyViewController = TransactionHistoryRouter.createModule()
         viewController?.navigationController?.pushViewController(historyViewController, animated: true)
     }
+    
+    func navigateToGenerateQR() {
+        let generateQRViewController = GenerateQRRouter.createModule()
+        viewController?.navigationController?.pushViewController(generateQRViewController, animated: true)
+    }
 }

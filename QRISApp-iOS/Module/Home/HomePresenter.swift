@@ -41,6 +41,10 @@ final class HomePresenter: HomePresenterProtocol {
         router.navigateToHistory()
     }
     
+    func didTapGenerateQR() {
+        router.navigateToGenerateQR()
+    }
+    
     func fetchBalance() {
         balance = interactor.getBalance()
     }

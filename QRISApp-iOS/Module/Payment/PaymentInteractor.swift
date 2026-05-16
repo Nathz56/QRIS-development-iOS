@@ -7,7 +7,7 @@
 
 final class PaymentInteractor: PaymentInteractorProtocol {
     
-    func processPayment(transaction: ScanQREntity) -> Bool {
+    func processPayment(transaction: QRData) -> Bool {
         let currentBalance = UserBalance.shared.balance
         
         guard currentBalance >= transaction.amount else {

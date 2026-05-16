@@ -8,7 +8,7 @@
 import UIKit
 
 protocol TransactionHistoryViewProtocol: AnyObject {
-    func showTransactions(_ transactions: [ScanQREntity])
+    func showTransactions(_ transactions: [QRData])
     func showEmpty()
 }
 
@@ -17,7 +17,7 @@ protocol TransactionHistoryPresenterProtocol: AnyObject {
 }
 
 protocol TransactionHistoryInteractorProtocol: AnyObject {
-    func fetchTransactions() -> [ScanQREntity]
+    func fetchTransactions() -> [QRData]
 }
 
 protocol TransactionHistoryRouterProtocol: AnyObject {

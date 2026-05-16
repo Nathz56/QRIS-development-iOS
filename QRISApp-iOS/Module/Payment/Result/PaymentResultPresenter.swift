@@ -10,10 +10,10 @@ final class PaymentResultPresenter: PaymentResultPresenterProtocol {
     weak var view: PaymentResultViewProtocol?
     let router: PaymentResultRouterProtocol
     let success: Bool
-    let transaction: ScanQREntity?
+    let transaction: QRData?
     let remainingBalance: Int?
     
-    init(router: PaymentResultRouterProtocol, success: Bool, transaction: ScanQREntity?, remainingBalance: Int?) {
+    init(router: PaymentResultRouterProtocol, success: Bool, transaction: QRData?, remainingBalance: Int?) {
         self.router = router
         self.success = success
         self.transaction = transaction

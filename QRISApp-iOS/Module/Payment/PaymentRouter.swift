@@ -10,9 +10,9 @@ import UIKit
 final class PaymentRouter: PaymentRouterProtocol{
     
     weak var viewController: UIViewController?
-    var transaction: ScanQREntity?
+    var transaction: QRData?
     
-    static func createModule(transaction: ScanQREntity) -> UIViewController {
+    static func createModule(transaction: QRData) -> UIViewController {
         
         let interactor = PaymentInteractor()
         
