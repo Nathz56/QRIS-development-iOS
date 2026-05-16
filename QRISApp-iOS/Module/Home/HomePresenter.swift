@@ -39,6 +39,6 @@ final class HomePresenter: HomePresenterProtocol {
     }
     
     func showBalance() {
-        view?.showBalance(balance ?? 0)
+        view?.showBalance(interactor.getBalance())
     }
 }

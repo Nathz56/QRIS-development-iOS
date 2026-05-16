@@ -11,10 +11,3 @@ struct ScanQREntity {
     let merchantName: String
     let amount: Int
 }
-
-struct TransactionEntity {
-    let transactionID: String
-    let transactionDate: String
-    let merchantName: String
-    let amount: String
-}

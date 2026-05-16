@@ -8,6 +8,6 @@
 final class HomeInteractor: HomeInteractorProtocol {
 
     func getBalance() -> Int {
-        return 100000
+        UserBalance.shared.balance
     }
 }

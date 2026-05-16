@@ -52,6 +52,11 @@ final class HomeViewController: UIViewController {
         
         presenter.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter.viewDidLoad()
+    }
 
     private func setupView() {
         title = "Home"
@@ -98,8 +103,8 @@ final class HomeViewController: UIViewController {
 
 extension HomeViewController: HomeViewProtocol {
     
-    func showBalance(_ balanceAmount: Int) {
-          balanceLabel.text = formatCurrency(balanceAmount)
+    func showBalance(_ balance: Int) {
+       balanceLabel.text = formatCurrency(balance)
       }
     
 }

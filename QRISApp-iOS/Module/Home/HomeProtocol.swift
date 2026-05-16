@@ -8,7 +8,7 @@
 import UIKit
 
 protocol HomeViewProtocol: AnyObject {
-    func showBalance(_ balanceAmount: Int)
+    func showBalance(_ balance: Int)
 }
 
 protocol HomePresenterProtocol: AnyObject {
