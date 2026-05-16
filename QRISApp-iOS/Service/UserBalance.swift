@@ -9,9 +9,14 @@ final class UserBalance {
     static let shared = UserBalance()
     private init() {}
     
-    var balance: Int = 99999
+    private(set) var balance: Int = 99999
     
-    func deduct(amount: Int) {
+    func deduct(amount: Int) -> Bool {
+        guard amount > 0, amount <= balance else {
+            return false
+        }
+        
         balance -= amount
+        return true
     }
 }
