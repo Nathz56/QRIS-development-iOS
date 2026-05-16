@@ -13,6 +13,11 @@ final class PaymentInteractor: PaymentInteractorProtocol {
         guard currentBalance >= transaction.amount else {
             return false //pastiin balance diats jumlah yg mau ditransaksi
         }
+        
+        guard transaction.amount > 0 else {
+            return false
+        }
+        
         UserBalance.shared.deduct(amount: transaction.amount)
         return true
     }
