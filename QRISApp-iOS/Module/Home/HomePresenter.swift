@@ -15,7 +15,7 @@ final class HomePresenter: HomePresenterProtocol {
     let interactor: HomeInteractorProtocol
     let router: HomeRouterProtocol
     
-    var balance: Int? = 0
+    var balance: Int = 0
     
     init (
         interactor: HomeInteractorProtocol,
@@ -26,8 +26,6 @@ final class HomePresenter: HomePresenterProtocol {
     }
     
     func viewDidLoad() {
-        fetchBalance()
-        showBalance()
     }
     
     func viewWillAppear() {
@@ -39,12 +37,15 @@ final class HomePresenter: HomePresenterProtocol {
         router.navigateToScanQR()
     }
     
+    func didTapHistory() {
+        router.navigateToHistory()
+    }
+    
     func fetchBalance() {
         balance = interactor.getBalance()
     }
     
     func showBalance() {
-        guard let balance else { return }
         view?.showBalance(balance)
     }
 }

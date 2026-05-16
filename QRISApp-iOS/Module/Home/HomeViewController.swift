@@ -41,7 +41,15 @@ final class HomeViewController: UIViewController {
         
         return button
     }()
-
+    
+    private let historyButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Riwayat", for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 14, weight: .medium)
+        button.setImage(UIImage(systemName: "clock"), for: .normal)
+        button.tintColor = .systemBlue
+        return button
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +72,14 @@ final class HomeViewController: UIViewController {
 
         view.addSubview(balanceLabel)
         view.addSubview(scanButton)
+        view.addSubview(historyButton)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+                image: UIImage(systemName: "clock"),
+                style: .plain,
+                target: self,
+                action: #selector(tappedHistoryButton)
+            )
     }
 
     private func setupLayout() {
@@ -84,11 +100,17 @@ final class HomeViewController: UIViewController {
     private func setupAction() {
         
         scanButton.addTarget(self, action: #selector(tappedScanButton), for: .touchUpInside)
+        historyButton.addTarget(self, action: #selector(tappedHistoryButton), for: .touchUpInside)
     }
     
     @objc
     private func tappedScanButton() {
         presenter.didTapScan()
+    }
+    
+    @objc
+    private func tappedHistoryButton() {
+        presenter.didTapHistory()
     }
     
     private func formatCurrency(_ amount: Int) -> String {
