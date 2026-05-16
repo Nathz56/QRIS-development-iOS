@@ -40,4 +40,8 @@ final class HomeRouter: HomeRouterProtocol {
         
     }
     
+    func navigateToHistory() {
+        let historyViewController = TransactionHistoryRouter.createModule()
+        viewController?.navigationController?.pushViewController(historyViewController, animated: true)
+    }
 }

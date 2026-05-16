@@ -10,6 +10,7 @@ final class UserBalance {
     private init() {}
     
     private(set) var balance: Int = 99999
+    private(set) var transactions: [ScanQREntity] = []
     
     func deduct(amount: Int) -> Bool {
         guard amount > 0, amount <= balance else {
@@ -18,5 +19,9 @@ final class UserBalance {
         
         balance -= amount
         return true
+    }
+    
+    func addTransaction(_ transaction: ScanQREntity) {
+        transactions.insert(transaction, at: 0)
     }
 }

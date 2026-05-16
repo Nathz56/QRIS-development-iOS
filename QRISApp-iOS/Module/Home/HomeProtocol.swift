@@ -13,6 +13,7 @@ protocol HomePresenterProtocol: AnyObject {
     func viewDidLoad()
     func viewWillAppear()
     func didTapScan()
+    func didTapHistory()
 }
 
 protocol HomeInteractorProtocol: AnyObject {
@@ -21,4 +22,5 @@ protocol HomeInteractorProtocol: AnyObject {
 
 protocol HomeRouterProtocol: AnyObject {
     func navigateToScanQR()
+    func navigateToHistory()
 }

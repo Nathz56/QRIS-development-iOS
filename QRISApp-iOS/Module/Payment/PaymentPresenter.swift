@@ -33,7 +33,7 @@ final class PaymentPresenter: PaymentPresenterProtocol {
     func didTapConfirmPayment() {
         let paymentSuccesss = interactor.processPayment(transaction: transaction)
         if paymentSuccesss {
-//            TransactionHistoryService.shared.add(transaction: transaction)
+            UserBalance.shared.addTransaction(transaction)
             router.navigateToPaymentSuccess()
         } else {
             router.navigateToPaymentFailed()

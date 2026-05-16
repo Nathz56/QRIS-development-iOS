@@ -32,6 +32,7 @@ final class PaymentViewController: UIViewController {
     private let merchantLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 18, weight: .semibold)
+        label.textColor = .black
         return label
     }()
     
@@ -46,6 +47,7 @@ final class PaymentViewController: UIViewController {
     private let transactionIDLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 18, weight: .semibold)
+        label.textColor = .black
         return label
     }()
     
@@ -60,7 +62,7 @@ final class PaymentViewController: UIViewController {
     private let amountLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 28, weight: .bold)
-        label.textColor = .systemBlue
+        label.textColor = .black
         return label
     }()
     
