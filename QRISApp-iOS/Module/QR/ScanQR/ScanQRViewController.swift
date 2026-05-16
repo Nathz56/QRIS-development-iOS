@@ -16,23 +16,6 @@ final class ScanQRViewController: UIViewController {
     private var captureSession: AVCaptureSession?
     private var previewLayer: AVCaptureVideoPreviewLayer?
     
-    private let qrImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        imageView.isHidden = true
-        return imageView
-    }()
-    
-    private let generateButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("Generate QR", for: .normal)
-        button.titleLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
-        button.backgroundColor = .systemBlue
-        button.tintColor = .white
-        button.layer.cornerRadius = 12
-        return button
-    }()
-    
     init(presenter: ScanQRPresenterProtocol) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
@@ -45,8 +28,6 @@ final class ScanQRViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        setupLayout()
-        setupAction()
         setupCamera()
         presenter.viewDidLoad()
     }
@@ -56,29 +37,9 @@ final class ScanQRViewController: UIViewController {
         captureSession?.stopRunning()
     }
     
-    // MARK: - Setup
     private func setupView() {
         title = "Scan QR"
         view.backgroundColor = .black
-        view.addSubview(qrImageView)
-        view.addSubview(generateButton)
-    }
-    
-    private func setupLayout() {
-        qrImageView.snp.makeConstraints {
-            $0.center.equalToSuperview()
-            $0.width.height.equalTo(250)
-        }
-        
-        generateButton.snp.makeConstraints {
-            $0.leading.trailing.equalToSuperview().inset(24)
-            $0.bottom.equalTo(view.safeAreaLayoutGuide).offset(-24)
-            $0.height.equalTo(56)
-        }
-    }
-    
-    private func setupAction() {
-        generateButton.addTarget(self, action: #selector(tappedGenerateButton), for: .touchUpInside)
     }
     
     private func setupCamera() {
@@ -109,11 +70,6 @@ final class ScanQRViewController: UIViewController {
             session.startRunning()
         }
     }
-    
-    @objc
-    private func tappedGenerateButton() {
-        presenter.didTapGenerateQRCode()
-    }
 }
 
 extension ScanQRViewController: AVCaptureMetadataOutputObjectsDelegate {
@@ -128,13 +84,4 @@ extension ScanQRViewController: AVCaptureMetadataOutputObjectsDelegate {
         captureSession?.stopRunning()
         presenter.didScanQRCode(qrString: qrString)
     }
-}
-
-extension ScanQRViewController: ScanQRViewProtocol {
-    func showGeneratedQRCode(_ image: UIImage?) {
-        qrImageView.image = image
-        qrImageView.isHidden = false
-        generateButton.isHidden = true
-    }
-
 }

@@ -1,18 +1,18 @@
 //
-//  ScanQRInteractor.swift
+//  GenerateQRInteractor.swift
 //  QRISApp-iOS
 //
-//  Created by Yonathan Hilkia on 15/05/26.
+//  Created by Yonathan Hilkia on 16/05/26.
 //
 
 import UIKit
 import CoreImage
 
-final class ScanQRInteractor: ScanQRInteractorProtocol {
+final class GenerateQRInteractor: GenerateQRInteractorProtocol {
     
     private let parser = QRParser()
     
-    func generateQRCode(from entity: ScanQREntity) -> UIImage? {
+    func generateQRCode(from entity: QRData) -> UIImage? {
         let qrString = parser.buildQRString(entity)
         
         guard let data = qrString.data(using: .utf8),

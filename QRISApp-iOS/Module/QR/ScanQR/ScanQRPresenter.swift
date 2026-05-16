@@ -13,15 +13,7 @@ final class ScanQRPresenter: ScanQRPresenterProtocol {
     weak var view: ScanQRViewProtocol?
     let interactor: ScanQRInteractorProtocol
     let router: ScanQRRouterProtocol
-    
     private let parser = QRParser()
-    
-    private let entity = ScanQREntity(
-         bankName: "BNI",
-         transactionID: "ID12345678",
-         merchantName: "MERCHANT MOCK TEST",
-         amount: 50000
-     )
     
     init(interactor: ScanQRInteractorProtocol, router: ScanQRRouterProtocol) {
           self.interactor = interactor
@@ -30,17 +22,11 @@ final class ScanQRPresenter: ScanQRPresenterProtocol {
     
     func viewDidLoad() {}
     
-    func didTapGenerateQRCode() {
-           let image = interactor.generateQRCode(from: entity)
-           view?.showGeneratedQRCode(image)
-       }
-    
     func didScanQRCode(qrString: String) {
-        let image = interactor.generateQRCode(from: entity)
-        view?.showGeneratedQRCode(image)
-        router.navigateToPayment(transaction: self.entity)
+        guard interactor.isValidQRString(qrString) else { return }
+        guard let transaction = parser.parse(qrString) else { return }
+        router.navigateToPayment(transaction: transaction)
     }
-    
 }
 
 

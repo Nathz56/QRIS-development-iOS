@@ -11,7 +11,7 @@ final class PaymentResultRouter: PaymentResultRouterProtocol {
     
     weak var viewController: UIViewController?
     
-    static func createModule(success: Bool, transaction: ScanQREntity?, remainingBalance: Int?) -> UIViewController {
+    static func createModule(success: Bool, transaction: QRData?, remainingBalance: Int?) -> UIViewController {
         let router = PaymentResultRouter()
         let presenter = PaymentResultPresenter(
             router: router,
