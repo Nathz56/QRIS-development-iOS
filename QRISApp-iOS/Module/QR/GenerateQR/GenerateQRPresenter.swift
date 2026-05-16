@@ -14,9 +14,7 @@ final class GenerateQRPresenter: GenerateQRPresenterProtocol {
     
     let interactor: GenerateQRInteractorProtocol
     let router: GenerateQRRouterProtocol
-    
-    private let parser = QRParser()
-    
+        
     private let entity = QRData(
          bankName: "BNI",
          transactionID: "ID12345678",
