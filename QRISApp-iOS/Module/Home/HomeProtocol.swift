@@ -5,14 +5,13 @@
 //  Created by Yonathan Hilkia on 14/05/26.
 //
 
-import UIKit
-
 protocol HomeViewProtocol: AnyObject {
     func showBalance(_ balance: Int)
 }
 
 protocol HomePresenterProtocol: AnyObject {
     func viewDidLoad()
+    func viewWillAppear()
     func didTapScan()
 }
 

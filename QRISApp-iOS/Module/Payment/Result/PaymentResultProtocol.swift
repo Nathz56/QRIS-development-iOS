@@ -5,8 +5,6 @@
 //  Created by Yonathan Hilkia on 16/05/26.
 //
 
-import UIKit
-
 protocol PaymentResultViewProtocol: AnyObject {
     func showSuccess(transaction: ScanQREntity, remainingBalance: Int)
     func showFailed()
