@@ -38,7 +38,7 @@ final class PaymentTest: XCTestCase {
         super.tearDown()
     }
     
-    func test_didTapConfirmPaymentwhenSuccess() {
+    func test_didTapConfirmPaymentWhenSuccess() {
         
         mockPaymentInteractor.mockPaymentSucceded = true
         
@@ -48,7 +48,7 @@ final class PaymentTest: XCTestCase {
         XCTAssertFalse(mockPaymentRouter.navigateToResultWithFailedCalled)
     }
         
-    func test_didTapConfirmPaymentwhenFailed() {
+    func test_didTapConfirmPaymentWhenFailed() {
         
         mockPaymentInteractor.mockPaymentSucceded = false
         
