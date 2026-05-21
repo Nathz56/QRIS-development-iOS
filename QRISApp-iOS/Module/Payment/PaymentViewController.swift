@@ -100,32 +100,44 @@ final class PaymentViewController: UIViewController {
     private func setupLayout() {
         merchantTitleLabel.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide).offset(40)
-            $0.leading.equalToSuperview().inset(24)
+//            $0.leading.equalToSuperview().inset(24)
+            
+            $0.centerX.equalToSuperview()
         }
         
         merchantLabel.snp.makeConstraints {
             $0.top.equalTo(merchantTitleLabel.snp.bottom).offset(4)
-            $0.leading.equalToSuperview().inset(24)
+//            $0.leading.equalToSuperview().inset(24)
+            
+            $0.centerX.equalToSuperview()
         }
         
         transactionIDTitleLabel.snp.makeConstraints {
             $0.top.equalTo(merchantLabel.snp.bottom).offset(24)
-            $0.leading.equalToSuperview().inset(24)
+//            $0.leading.equalToSuperview().inset(24)
+            
+            $0.centerX.equalToSuperview()
         }
         
         transactionIDLabel.snp.makeConstraints {
             $0.top.equalTo(transactionIDTitleLabel.snp.bottom).offset(4)
-            $0.leading.equalToSuperview().inset(24)
+//            $0.leading.equalToSuperview().inset(24)
+            
+            $0.centerX.equalToSuperview()
         }
         
         amountTitleLabel.snp.makeConstraints {
             $0.top.equalTo(transactionIDLabel.snp.bottom).offset(24)
-            $0.leading.equalToSuperview().inset(24)
+//            $0.leading.equalToSuperview().inset(24)
+            
+            $0.centerX.equalToSuperview()
         }
         
         amountLabel.snp.makeConstraints {
             $0.top.equalTo(amountTitleLabel.snp.bottom).offset(4)
-            $0.leading.equalToSuperview().inset(24)
+//            $0.leading.equalToSuperview().inset(24)
+            
+            $0.centerX.equalToSuperview()
         }
         
         confirmButton.snp.makeConstraints {

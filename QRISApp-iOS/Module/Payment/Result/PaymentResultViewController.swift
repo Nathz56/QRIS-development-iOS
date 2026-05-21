@@ -21,16 +21,17 @@ final class PaymentResultViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private let iconLabel: UILabel = {
+    private let statusLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 64)
+        label.font = .systemFont(ofSize: 22, weight: .bold)
         label.textAlignment = .center
         return label
     }()
     
-    private let statusLabel: UILabel = {
+    private let paymentDestinationLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 22, weight: .bold)
+        label.font = .systemFont(ofSize: 16)
+        label.text = "Pembayaran ke"
         label.textAlignment = .center
         return label
     }()
@@ -46,14 +47,14 @@ final class PaymentResultViewController: UIViewController {
     private let amountLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 28, weight: .bold)
-        label.textColor = .systemBlue
+        label.textColor = .black
         label.textAlignment = .center
         return label
     }()
     
     private let remainingBalanceLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 14)
+        label.font = .systemFont(ofSize: 28, weight: .bold)
         label.textColor = .gray
         label.textAlignment = .center
         return label
@@ -81,8 +82,8 @@ final class PaymentResultViewController: UIViewController {
         view.backgroundColor = .white
         navigationItem.hidesBackButton = true
         
-        view.addSubview(iconLabel)
         view.addSubview(statusLabel)
+        view.addSubview(paymentDestinationLabel)
         view.addSubview(merchantLabel)
         view.addSubview(amountLabel)
         view.addSubview(remainingBalanceLabel)
@@ -90,13 +91,15 @@ final class PaymentResultViewController: UIViewController {
     }
     
     private func setupLayout() {
-        iconLabel.snp.makeConstraints {
-            $0.centerX.equalToSuperview()
-            $0.top.equalTo(view.safeAreaLayoutGuide).offset(80)
-        }
         
         statusLabel.snp.makeConstraints {
-            $0.top.equalTo(iconLabel.snp.bottom).offset(16)
+            $0.centerX.equalToSuperview()
+            $0.top.equalTo(view.safeAreaLayoutGuide).offset(40)
+
+        }
+        
+        paymentDestinationLabel.snp.makeConstraints {
+            $0.top.equalTo(statusLabel.snp.bottom).offset(8)
             $0.centerX.equalToSuperview()
         }
         
@@ -135,20 +138,16 @@ final class PaymentResultViewController: UIViewController {
 extension PaymentResultViewController: PaymentResultViewProtocol {
     
     func showSuccess(transaction: QRData, remainingBalance: Int) {
-        title = "Pembayaran Berhasil"
-        iconLabel.text = "✅"
         statusLabel.text = "Pembayaran Berhasil"
         merchantLabel.text = transaction.merchantName
         amountLabel.text = FormatCurrency.format(transaction.amount)
-        remainingBalanceLabel.text = "Sisa saldo: \(FormatCurrency.format(remainingBalance))"
+        remainingBalanceLabel.text = "Sisa balance: \(FormatCurrency.format(remainingBalance))"
     }
     
     func showFailed() {
-        title = "Pembayaran Gagal"
-        iconLabel.text = "❌"
         statusLabel.text = "Pembayaran Gagal"
+        paymentDestinationLabel.text = ""
         statusLabel.textColor = .systemRed
         merchantLabel.text = "Saldo tidak cukup"
-        doneButton.backgroundColor = .systemRed
     }
 }

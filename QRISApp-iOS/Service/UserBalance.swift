@@ -9,7 +9,7 @@ final class UserBalance {
     static let shared = UserBalance()
     private init() {}
     
-    private(set) var balance: Int = 99999
+    private(set) var balance: Int = 149999
     private(set) var transactions: [QRData] = []
     
     func deduct(amount: Int) -> Bool {
