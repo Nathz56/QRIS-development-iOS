@@ -28,6 +28,7 @@ final class TransactionHistoryViewController: UIViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "TransactionCell")
         tableView.separatorStyle = .singleLine
         tableView.isHidden = true
+        tableView.backgroundColor = .white
         return tableView
     }()
     
@@ -69,7 +70,6 @@ final class TransactionHistoryViewController: UIViewController {
     }
 }
 
-// MARK: - UITableViewDataSource
 extension TransactionHistoryViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -77,19 +77,22 @@ extension TransactionHistoryViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionCell", for: indexPath)
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionCell", for: indexPath)
+        let cell = UITableViewCell(style: .value1, reuseIdentifier: "TransactionCell")
         let transaction = transactions[indexPath.row]
         
         var content = cell.defaultContentConfiguration()
         content.text = transaction.merchantName
         content.secondaryText = FormatCurrency.format(transaction.amount)
         cell.contentConfiguration = content
+        cell.backgroundColor = .systemBackground
+        cell.textLabel?.textColor = .black
+        cell.textLabel?.font = .systemFont(ofSize: 16)
         
         return cell
     }
 }
 
-// MARK: - TransactionHistoryViewProtocol
 extension TransactionHistoryViewController: TransactionHistoryViewProtocol {
     
     func showTransactions(_ transactions: [QRData]) {
